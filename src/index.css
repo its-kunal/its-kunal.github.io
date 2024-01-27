@@ -10,12 +10,3 @@
     box-sizing: border-box;
     font-family: 'outfit';
 }
-
-body {
-    /* color: white; */
-}
-
-html,
-body {
-    overflow-x: hidden;
-}
