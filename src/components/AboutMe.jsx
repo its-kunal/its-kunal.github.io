@@ -2,10 +2,11 @@ import React from "react";
 import AstronautCodingSvg from "../assets/svgs/AstronautCoding.svg";
 import HeartSvg from "../assets/svgs/Heart.svg";
 import PlanetSvg from "../assets/svgs/Planet.svg";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <section className="">
+    <section className="text-gray-950">
       <h4 className="text-xs font-bold text-gray-500 text-right">About Me</h4>
       {/* Layout Wrapper */}
       <div className="h-80 grid grid-cols-3 gap-x-7">
@@ -42,13 +43,21 @@ export default function AboutMe() {
             animi culpa sint magni ratione cumque, ipsa nesciunt recusandae
             soluta tempore.
           </p>
-          <div className="flex gap-x-2">
-            <button className="bg-red-600 px-3 py-1 text-white rounded">
-              Learn More
-            </button>
-            <button className="border border-gray-500 px-3 py-1 rounded text-gray-500">
-              View CV
-            </button>
+          <div className="flex gap-x-4 py-5 items-center">
+            <div className="h-0.5 bg-gray-500 w-full rounded-full "></div>
+            <a href="https://github.com/its-kunal" title="Github" className="rounded-full p-2 hover:bg-gray-50">
+              <Github className="hover:text-red-600" />
+            </a>
+            <a href="https://www.linkedin.com/in/kunalagrawal24/" title="LinkedIn" className="rounded-full p-2 hover:bg-gray-50">
+              <Linkedin className="hover:text-red-600" />
+            </a>
+            <a
+              href="https://twitter.com/KunalPy3"
+              title="Twitter"
+              className="rounded-full p-2 hover:bg-gray-50"
+            >
+              <Twitter className="hover:text-red-600" />
+            </a>
           </div>
         </div>
       </div>
