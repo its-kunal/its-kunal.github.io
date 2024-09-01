@@ -1,29 +1,36 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Logo from "@/app/assets/logo.svg";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
+import {
+  AboutMeId,
+  ContactId,
+  ExperienceId,
+  HeroId,
+  ProjectsId,
+} from "../config/sectionId";
 
 const links = [
   {
     name: "About",
-    href: "#about",
+    href: "#" + AboutMeId,
   },
   {
     name: "Projects",
-    href: "#projects",
+    href: "#" + ProjectsId,
   },
   {
     name: "Experience",
-    href: "#exp",
+    href: "#" + ExperienceId,
   },
   {
     name: "Contact",
-    href: "#contact",
+    href: "#" + ContactId,
   },
 ];
-
 
 function BottomNavigationBar() {
   return (
@@ -31,9 +38,9 @@ function BottomNavigationBar() {
       <div className="gap-4 flex">
         {links.map((link, idx) => {
           return (
-            <span key={idx} className="text-sm">
-              {link.name}
-            </span>
+            <a href={link.href} key={idx}>
+              <span className="text-sm">{link.name}</span>
+            </a>
           );
         })}
       </div>
@@ -43,6 +50,7 @@ function BottomNavigationBar() {
 
 export default function AppBar() {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -69,7 +77,12 @@ export default function AppBar() {
         } transition-all duration-500 ease-in-out`}
       >
         <div className="mx-auto max-w-4xl flex items-center h-full px-4 md:px-0 py-1 justify-between">
-          <div className="flex gap-4 items-center">
+          <div
+            className="flex gap-4 items-center"
+            onClick={() => {
+              navigate.push("#" + HeroId);
+            }}
+          >
             <Image src={Logo} alt={"Kunal Agrawal"} height={30} width={30} />
             <div className="flex flex-col">
               <span className="font-bold text-sm tracking-widest leading-none">
@@ -83,13 +96,18 @@ export default function AppBar() {
           <div className="gap-2 md:gap-4 hidden md:flex">
             {links.map((link, idx) => {
               return (
-                <span key={idx} className="text-xs">
-                  {link.name}
-                </span>
+                <a key={idx} href={link.href}>
+                  <span className="text-xs">{link.name}</span>
+                </a>
               );
             })}
           </div>
-          <button className="rounded bg-purple-200 px-2 py-1 flex gap-x-2 items-center">
+          <button
+            className="rounded bg-purple-200 px-2 py-1 flex gap-x-2 items-center"
+            onClick={() => {
+              navigate.push("https://www.linkedin.com/in/kunalagrawal24/");
+            }}
+          >
             <span className="text-sm font-semibold">Let's Connect</span>
             <span>
               <FontAwesomeIcon

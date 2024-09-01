@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { LegacyRef, useEffect, useRef, useState } from "react";
 import HeroImage from "@/app/assets/hero.png";
+import { HeroId } from "@/app/config/sectionId";
 
 function JethaToolTip() {
   return (
@@ -40,7 +41,7 @@ export default function Hero() {
   // }, [pos]);
 
   return (
-    <div className="bg-transparent w-full relative">
+    <div className="bg-transparent w-full relative" id={HeroId}>
       <div className="h-full backdrop-blur-3xl z-10">
         <div className="max-w-4xl mx-auto px-4 md:px-0 w-full flex flex-col ">
           <div className="h-28"></div>
