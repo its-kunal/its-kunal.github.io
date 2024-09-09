@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNodes } from "@fortawesome/free-solid-svg-icons";
 import {
-  AboutMeId,
+  ResumeId,
   ContactId,
   ExperienceId,
   HeroId,
@@ -16,7 +16,7 @@ import {
 const links = [
   {
     name: "About",
-    href: "#" + AboutMeId,
+    href: "#" + ResumeId,
   },
   {
     name: "Projects",

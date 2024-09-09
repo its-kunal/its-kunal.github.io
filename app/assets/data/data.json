@@ -1,0 +1,235 @@
+{
+  "name": "Kunal Agrawal",
+  "experience": [
+    {
+      "organization": "IONAGE TECHNOLOGIES PRIVATE LIMITED",
+      "startDate": "Feb 2024",
+      "endDate": "Aug 2024",
+      "role": "Full Stack Developer Intern",
+      "responsibilities": [
+        "Developed an EV Management Dashboard using TypeScript, integrating CMS, NEXUS, and third-party APIs, with D3 maps for dynamic visualizations.",
+        "Enhanced user experience with Firebase authentication and a responsive MUI interface, including theme scoping and typography sanitization.",
+        "Streamlined project management with Jira and ensured effective team communication via Slack for successful project delivery."
+      ],
+      "remarks": "",
+      "link": "https://www.ionage.in/"
+    },
+    {
+      "organization": "TECHNOBOOT",
+      "startDate": "Oct 2022",
+      "endDate": "Dec 2022",
+      "role": "Front End Developer Intern",
+      "responsibilities": [
+        "Built Interactive Web Components with React, ensuring responsive and seamless user experiences.",
+        "Leveraged Redux for Efficient State Management in complex web applications.",
+        "Utilized Git and Bitbucket for Collaborative Development, smooth teamwork, and streamlined workflows."
+      ],
+      "remarks": "",
+      "link": "https://technoboot.co/"
+    },
+    {
+      "organization": "EVREX",
+      "startDate": "Feb 2022",
+      "endDate": "Oct 2022",
+      "role": "Developer Intern",
+      "responsibilities": [
+        "Built \"Maya,\" a Dialogflow chatbot, integrating with Google Assistant for appointment scheduling.",
+        "Automated appointments using Dialogflow and data with Firebase Cloud Firestore for scheduling.",
+        "Developed a notification system using webhooks and Cloud Firestore to keep customers informed about their vehicle servicing status, to enhance user engagement with the application."
+      ],
+      "remarks": "",
+      "link": "https://evrex.in/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "CHATTERBOX",
+      "techStack": [],
+      "description": [
+        "Realtime image, audio, and text messages communication, using socket.io.",
+        "An AI-assisted chatbot “Chatterbot” using Langchain and VertexAI.",
+        "Sharp.js to optimize image quality and convert the image to WEBP format.",
+        "Rollup and Vite to manage the module bundle of the code and achieve a production size of 64MB.",
+        "Firebase-admin to manage authentication of the users in the server, and send web notifications."
+      ],
+      "link": "https://chatterbox-kunal.web.app/",
+      "github": "https://github.com/its-kunal/chatterbox"
+    },
+    {
+      "name": "AGROSITE",
+      "techStack": [],
+      "description": [
+        "Implemented Firebase services such as Authentication, and Firestore.",
+        "React Bootstrap will create consistent and themed components throughout the application.",
+        "Firebase Cloud Storage for handling media files.",
+        "Custom React hooks to manage API calls to Firebase."
+      ],
+      "link": "https://agrosite-2.web.app/",
+      "github": "https://github.com/its-kunal-ssi/FarmLink"
+    },
+    {
+      "name": "OPINIONEST",
+      "techStack": [],
+      "description": [
+        "Build using MERN Tech Stack",
+        "Uses SVGs",
+        "Deployed using Google Cloud Run and Firebase hosting.",
+        "Implemented Charts using Chart.js for interactive data display."
+      ],
+      "link": "https://opinionest-web.web.app/",
+      "github": "https://github.com/its-kunal/opinonest"
+    }
+  ],
+  "tech": [],
+  "socials": [
+    {
+      "name": "KunalPy3",
+      "link": "https://twitter.com/KunalPy3",
+      "platform": "X"
+    },
+    {
+      "name": "kunalagrawal24",
+      "link": "https://www.linkedin.com/in/kunalagrawal24/",
+      "platform": "LinkedIn"
+    },
+    {
+      "name": "its-kunal",
+      "link": "https://github.com/its-kunal",
+      "platform": "GitHub"
+    },
+    {
+      "name": "itskunal",
+      "link": "https://dev.to/itskunal",
+      "platform": "Dev.to"
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "level": 10,
+      "remarks": ""
+    }
+  ],
+  "education": [
+    {
+      "institute": "Shri Shankaracharya Institute of Professional Management and Technology, Raipur",
+      "degree": "B.Tech Computer Science Engineering.",
+      "startDate": "Sep 2021",
+      "endDate": "Jun 2025",
+      "period": "2021-25"
+    }
+  ],
+  "contribution": [
+    {
+      "organization": "Medusa.js",
+      "title": "Add Hindi translation for medusajs",
+      "description": "",
+      "link": "https://github.com/medusajs/medusa/pull/5452"
+    },
+    {
+      "organization": "Vercel",
+      "title": "Fix for Incorrect heading structure",
+      "description": "",
+      "link": "https://github.com/vercel/next.js/pull/57605"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Tabs to prettify Code Blocks",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/29"
+    },
+    {
+      "organization": "Keploy",
+      "title": " Add Newsletter subscription component.",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/27"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Fix: Keploy Logo, Title Inconsistencies, View All Posts",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/21"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Add animations to blog website",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/31"
+    },
+    {
+      "organization": "Keploy",
+      "title": " Fix: Aspect Ratio of Author Profile Image, Author Description",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/33"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Fix: Table Titles not visible in dark mode",
+      "description": "",
+      "link": "https://github.com/keploy/docs/pull/365"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Fix: Using Image tag instead of img for user avatar in tweets.",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/35"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Fix: use Image tag instead of img tag in open source vector png.",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/36"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Fix: use of Link tag instead of anchor tag.",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/37"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Remove: unnecessary imports present in the codebase.",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/38"
+    },
+    {
+      "organization": "Keploy",
+      "title": "Feature: Types for the blog website",
+      "description": "",
+      "link": "https://github.com/keploy/blog-website/pull/42"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Python Bootcamp - Jose Portilla",
+      "remarks": "",
+      "type": "learning",
+      "skills": []
+    },
+    {
+      "name": "Web Development MERN stack - Colt Steele"
+    },
+    {
+      "name": "College IOT Certification"
+    },
+    {
+      "name": "Nachiket Joshi Aptitude Certification"
+    },
+    {
+      "name": "Third prize in Agresita",
+      "type": "competition"
+    },
+    {
+      "name": "Five star in HackerRank",
+      "type": "competition"
+    },
+    {
+      "name": "Pictahon - North Cap University",
+      "type": "competition"
+    },
+    {
+      "name": "GFG Hackathon Round 1",
+      "type": "competition"
+    }
+  ]
+}
