@@ -194,17 +194,27 @@ export default function Resume() {
               {Data.projects.map((project, idx) => {
                 return (
                   <li key={idx}>
-                    <span className="font-bold">{project.name}</span>
-                    <div className="ml-5 flex gap-x-2 justify-between">
-                      <a
-                        className="text-gray-800 font-light"
-                        href={project.link}
-                      >
-                        View Live
+                    <span className="inline-flex justify-between">
+                      <a href={project.link}>
+                        <span className="font-bold">{project.name}</span>{" "}
                       </a>
+                      <a href={project.github} className="ml-2">
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+                    </span>
+                    <div className="ml-5 flex gap-x-2 justify-between flex-col">
                       {/* <span className="text-gray-800 font-light italic">
                         {exp.period}
                       </span> */}
+                      <ul className="list-decimal list-inside">
+                        {project.description.map((val, idx) => {
+                          return (
+                            <li key={idx} className="text-gray-800 font-light">
+                              {val}
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </div>
                   </li>
                 );
