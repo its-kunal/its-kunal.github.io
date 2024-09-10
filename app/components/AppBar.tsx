@@ -74,7 +74,7 @@ export default function AppBar() {
           scrolled
             ? "bg-white bg-opacity-60 backdrop-blur-sm w-[90%] rounded-md md:top-0 top-5 shadow-sm"
             : "bg-transparent w-full shadow-lg"
-        } transition-all duration-500 ease-in-out`}
+        } transition-all duration-500 ease-in-out left-1/2 -translate-x-1/2`}
       >
         <div className="mx-auto max-w-4xl flex items-center h-full px-4 md:px-0 py-1 justify-between">
           <div
