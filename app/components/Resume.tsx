@@ -131,7 +131,7 @@ const PROJECTS = [
 
 export default function Resume() {
   return (
-    <section className="w-full relative mt-10 h-[100vh]" id={ResumeId}>
+    <section className="w-full relative mt-10 " id={ResumeId}>
       <div className="max-w-4xl md:mx-auto mx-2 z-10 backdrop-blur-3xl">
         {/* heading */}
         <h2 className="text-center text-4xl font-bold">Resume</h2>
@@ -215,6 +215,32 @@ export default function Resume() {
                           );
                         })}
                       </ul>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          {/* Education */}
+          <div className="flex flex-col gap-y-1">
+            <h2 className="font-bold text-lg">Education</h2>
+            <ul className="list-disc list-inside">
+              {Data.education.map((edu, idx) => {
+                return (
+                  <li key={idx}>
+                    <span className="inline-flex justify-between">
+                      <span className="font-bold">{edu.institute}</span>{" "}
+                    </span>
+                    <div className="ml-5 flex gap-x-2 justify-between">
+                      <span key={idx} className="text-gray-800 font-light">
+                        {edu.degree}
+                      </span>
+                      <span
+                        key={idx}
+                        className="text-gray-800 font-light italic"
+                      >
+                        {edu.period}
+                      </span>
                     </div>
                   </li>
                 );
