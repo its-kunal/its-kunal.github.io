@@ -232,13 +232,10 @@ export default function Resume() {
                       <span className="font-bold">{edu.institute}</span>{" "}
                     </span>
                     <div className="ml-5 flex gap-x-2 justify-between">
-                      <span key={idx} className="text-gray-800 font-light">
+                      <span className="text-gray-800 font-light">
                         {edu.degree}
                       </span>
-                      <span
-                        key={idx}
-                        className="text-gray-800 font-light italic"
-                      >
+                      <span className="text-gray-800 font-light italic">
                         {edu.period}
                       </span>
                     </div>
