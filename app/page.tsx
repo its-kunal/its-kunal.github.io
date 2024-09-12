@@ -1,13 +1,13 @@
 import AppBar from "@/app/components/AppBar";
 import Hero from "@/app/components/Hero";
-import Projects from "@/app/components/Projects";
+import { ProjectSectionHomeLayout } from "@/app/components/Project/Projects";
 import Resume from "@/app/components/Resume";
 import Experience from "@/app/components/Experience";
 import Contact from "@/app/components/Contact";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden flex flex-col">
       {/* Color balls for 1st sections */}
       <>
         <div className="absolute top-[100px] left-0 h-20 w-20 bg-teal-300"></div>
@@ -22,10 +22,10 @@ export default function Home() {
         <div className="absolute top-0 right-10 aspect-square h-20 w-20 bg-fuchsia-300"></div>
       </>
       <AppBar />
-      <div className="flex flex-col backdrop-blur-3xl">
+      <div className="flex-1 flex flex-col backdrop-blur-3xl">
         <Hero />
         <Resume />
-        <Projects />
+        <ProjectSectionHomeLayout />
         <Experience />
         <Contact />
         <div className="h-32 md:h-0"></div>
