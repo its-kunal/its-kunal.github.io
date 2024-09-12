@@ -43,6 +43,7 @@
   ],
   "projects": [
     {
+      "key": "chatterbox",
       "name": "CHATTERBOX",
       "techStack": [],
       "description": [
@@ -53,9 +54,11 @@
         "Firebase-admin to manage authentication of the users in the server, and send web notifications."
       ],
       "link": "https://chatterbox-kunal.web.app/",
-      "github": "https://github.com/its-kunal/chatterbox"
+      "github": "https://github.com/its-kunal/chatterbox",
+      "tag": ["featured"]
     },
     {
+      "key": "agrosite",
       "name": "AGROSITE",
       "techStack": [],
       "description": [
@@ -65,9 +68,11 @@
         "Custom React hooks to manage API calls to Firebase."
       ],
       "link": "https://agrosite-2.web.app/",
-      "github": "https://github.com/its-kunal-ssi/FarmLink"
+      "github": "https://github.com/its-kunal-ssi/FarmLink",
+      "tag": ["featured"]
     },
     {
+      "key": "opinionest",
       "name": "OPINIONEST",
       "techStack": [],
       "description": [
@@ -77,7 +82,8 @@
         "Implemented Charts using Chart.js for interactive data display."
       ],
       "link": "https://opinionest-web.web.app/",
-      "github": "https://github.com/its-kunal/opinonest"
+      "github": "https://github.com/its-kunal/opinonest",
+      "tag": ["featured"]
     }
   ],
   "tech": [],
