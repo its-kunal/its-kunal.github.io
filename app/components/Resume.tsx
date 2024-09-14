@@ -227,10 +227,10 @@ export default function Resume() {
             <ul className="list-disc list-inside">
               {Data.education.map((edu, idx) => {
                 return (
-                  <li key={idx}>
-                    <span className="inline-flex justify-between">
+                  <>
+                    <li key={idx}>
                       <span className="font-bold">{edu.institute}</span>{" "}
-                    </span>
+                    </li>
                     <div className="ml-5 flex gap-x-2 justify-between">
                       <span className="text-gray-800 font-light">
                         {edu.degree}
@@ -239,7 +239,7 @@ export default function Resume() {
                         {edu.period}
                       </span>
                     </div>
-                  </li>
+                  </>
                 );
               })}
             </ul>
