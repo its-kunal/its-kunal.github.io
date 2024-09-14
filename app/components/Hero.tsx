@@ -116,9 +116,9 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto px-4 md:px-0 w-full flex flex-col ">
           <div className="h-40 md:h-60"></div>
           <div className="flex gap-x-2 items-center flex-col-reverse md:flex-row gap-y-10 md:gap-y-0">
-            <h1 className="relative text-center flex-1 font-semibold text-3xl flex flex-col z-30 items-start leading-relaxed text-gray-700">
+            <h1 className="relative text-center flex-1 font-semibold text-2xl md:text-3xl flex flex-col z-30 items-start leading-relaxed text-gray-700">
               <div>Namaste 🙏, I'm </div>
-              <div className="font-extrabold tracking-wide text-5xl text-black">
+              <div className="font-extrabold tracking-wide text-3xl md:text-5xl text-black">
                 {Data.name}
               </div>
             </h1>
