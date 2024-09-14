@@ -17,6 +17,7 @@ jobs:
           npm run build
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add out
+          mv out ./docs
+          git add docs
           git commit -m "Deploy to GitHub Pages"
-          git push origin main:gh-pages
+          git push origin -f main:gh-pages
