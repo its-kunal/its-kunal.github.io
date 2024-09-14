@@ -26,6 +26,7 @@ import TypeScriptSVG from "@/app/assets/icons/typescript.svg";
 import ViteJsSVG from "@/app/assets/icons/vitejsdev.svg";
 import Image from "next/image";
 import Data from "@/app/assets/data/data.json";
+import React from "react";
 
 const EXPERIENCE = [
   {
@@ -227,8 +228,8 @@ export default function Resume() {
             <ul className="list-disc list-inside">
               {Data.education.map((edu, idx) => {
                 return (
-                  <>
-                    <li key={idx}>
+                  <React.Fragment key={idx}>
+                    <li>
                       <span className="font-bold">{edu.institute}</span>{" "}
                     </li>
                     <div className="ml-5 flex gap-x-2 justify-between">
@@ -239,7 +240,7 @@ export default function Resume() {
                         {edu.period}
                       </span>
                     </div>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </ul>
