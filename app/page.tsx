@@ -26,9 +26,9 @@ export default function Home() {
         <Hero />
         <Resume />
         <ProjectSectionHomeLayout />
-        <Experience />
-        <Contact />
-        <div className="h-32 md:h-0"></div>
+        {/* <Experience /> */}
+        {/* <Contact /> */}
+        {/* <div className="h-32 md:h-0"></div> */}
       </div>
     </div>
   );
