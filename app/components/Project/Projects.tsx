@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     <section className="w-full relative mt-10" id={ProjectsId}>
      
       <div className="max-w-4xl md:mx-auto mx-2 z-10 backdrop-blur-3xl">
-        <h2 className="text-center text-4xl font-bold">Latest Projects</h2>
+        <h2 className="text-center text-3xl md:text-4xl font-bold">Latest Projects</h2>
         <div className="h-[1px] w-full bg-gray-700 my-2 rounded-full"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-4 justify-stretch my-4">
