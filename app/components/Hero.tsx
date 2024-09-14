@@ -8,7 +8,7 @@ import Data from "@/app/assets/data/data.json";
 
 function CodeWindow() {
   return (
-    <div className="max-w-md bg-gray-900 rounded-md border overflow-hidden shadow-md">
+    <div className="max-w-xs md:max-w-md bg-gray-900 rounded-md border overflow-hidden shadow-md">
       <div className="bg-gray-950 border-b border-gray-400 px-2 py-1 flex gap-x-1">
         <div className="bg-red-600 rounded-full h-2 w-2"></div>
         <div className="bg-yellow-600 rounded-full h-2 w-2"></div>
@@ -122,8 +122,8 @@ export default function Hero() {
                 {Data.name}
               </div>
             </h1>
-            <div className="h-96 w-96 relative z-10">
-              <div className="absolute w-full top-0 z-30">
+            <div className="h-96 w-72 md:w-96 relative z-10">
+              <div className="absolute w-full top-0 z-30 left-1/2 -translate-x-1/2">
                 <CodeWindow />
               </div>
               <div className="absolute z-40 bottom-0">
