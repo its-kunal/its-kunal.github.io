@@ -134,11 +134,11 @@ export default function Resume() {
     <section className="w-full relative mt-10 " id={ResumeId}>
       <div className="max-w-4xl md:mx-auto mx-2 z-10 backdrop-blur-3xl">
         {/* heading */}
-        <h2 className="text-center text-4xl font-bold">Resume</h2>
+        <h2 className="text-center text-3xl md:text-4xl font-bold">Resume</h2>
         {/* divider */}
         <div className="h-[1px] w-full bg-gray-300 mt-2 mb-4 rounded-full"></div>
         {/* content */}
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 text-sm md:text-base">
           {/* Address, Mail, Phone, Linkedin */}
           <div className="grid grid-cols-2 gap-y-1 md:gap-y-0 md:grid-cols-4 text-gray-800">
             <div className="flex gap-x-2 items-center hover:text-black">
