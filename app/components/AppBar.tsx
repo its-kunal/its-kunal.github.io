@@ -93,7 +93,7 @@ export default function AppBar() {
               </span>
             </div>
           </div>
-          <div className="gap-2 md:gap-4 hidden md:flex">
+          {/* <div className="gap-2 md:gap-4 hidden md:flex">
             {links.map((link, idx) => {
               return (
                 <a key={idx} href={link.href}>
@@ -101,7 +101,7 @@ export default function AppBar() {
                 </a>
               );
             })}
-          </div>
+          </div> */}
           <button
             className="rounded bg-purple-200 px-2 py-1 flex gap-x-2 items-center"
             onClick={() => {
@@ -120,7 +120,7 @@ export default function AppBar() {
           </button>
         </div>
       </nav>
-      <BottomNavigationBar />
+      {/* <BottomNavigationBar /> */}
     </>
   );
 }
