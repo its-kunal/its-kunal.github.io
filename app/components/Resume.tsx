@@ -136,7 +136,7 @@ export default function Resume() {
         {/* heading */}
         <h2 className="text-center text-3xl md:text-4xl font-bold">Resume</h2>
         {/* divider */}
-        <div className="h-[1px] w-full bg-gray-300 mt-2 mb-4 rounded-full"></div>
+        <div className="h-[1px] w-full bg-gray-700 my-2 rounded-full"></div>
         {/* content */}
         <div className="flex flex-col gap-y-4 text-sm md:text-base">
           {/* Address, Mail, Phone, Linkedin */}
