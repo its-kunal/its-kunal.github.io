@@ -3,31 +3,48 @@ name: Deploy Next.js Static Site
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-latest    
     steps:
       - uses: actions/checkout@v4
-      
-      # Install Node.js and dependencies
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.17.0'  # Specify the version of Node.js you need
-
+          node-version: "20.17.0"
       - name: Install dependencies
         run: npm install
-
-      # Build the Next.js static site
       - name: Build the site
         run: npm run build
-
-      # Deploy the "out" folder to the "gh-pages" branch now
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Archive artifact
+        run: |
+          echo ::group::Archive artifact
+          tar \
+            -cvf "$RUNNER_TEMP/github-pages.tar" \
+            out
+          echo ::endgroup::
+      - name: "Upload Github Pages Artifacts"
+        id: upload-artifact
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically provides this token
-          publish_dir: ./out  # Specify the folder to deploy
+          name: "github-pages"
+          path: ${{ runner.temp }}/github-pages.tar
+          retention-days: 1
+          if-no-files-found: error
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
