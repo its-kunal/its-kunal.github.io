@@ -1,23 +1,33 @@
-name: deploy
+name: Deploy Next.js Static Site
 
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on push to the main branch
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
+      # Install Node.js and dependencies
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.17.0'  # Specify the version of Node.js you need
+  
       - name: Install dependencies
         run: npm install
-      - name: Build and deploy
-        run: |
-          npm run build
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          mv out ./docs
-          git add docs
-          git commit -m "Deploy to GitHub Pages"
-          git push origin -f main:gh-pages
+
+      # Build the Next.js static site
+      - name: Build the site
+        run: npm run build
+
+      # Deploy the "out" folder to the "gh-pages" branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically provides this token
+          publish_dir: ./out  # Specify the folder to deploy
