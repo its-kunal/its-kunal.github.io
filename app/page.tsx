@@ -2,7 +2,7 @@ import AppBar from "@/app/components/AppBar";
 import Hero from "@/app/components/Hero";
 import { ProjectSectionHomeLayout } from "@/app/components/Project/Projects";
 import Resume from "@/app/components/Resume";
-import Experience from "@/app/components/Experience";
+import { ExperienceSectionHomeLayout } from "@/app/components/Experience";
 import Contact from "@/app/components/Contact";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <Hero />
         <Resume />
         <ProjectSectionHomeLayout />
-        {/* <Experience /> */}
+        <ExperienceSectionHomeLayout />
         {/* <Contact /> */}
         {/* <div className="h-32 md:h-0"></div> */}
       </div>
