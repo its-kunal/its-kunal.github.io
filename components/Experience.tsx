@@ -1,7 +1,7 @@
-import { ExperienceId } from "@/app/config/sectionId";
+import { ExperienceId } from "@/config/sectionId";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding } from "@fortawesome/free-solid-svg-icons";
-import Data from "@/app/assets/data/data.json";
+import Data from "@/assets/data/data.json";
 
 export default function Experience() {
   return (

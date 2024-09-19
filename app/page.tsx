@@ -1,9 +1,9 @@
-import AppBar from "@/app/components/AppBar";
-import Hero from "@/app/components/Hero";
-import { ProjectSectionHomeLayout } from "@/app/components/Project/Projects";
-import Resume from "@/app/components/Resume";
-import { ExperienceSectionHomeLayout } from "@/app/components/Experience";
-import Contact from "@/app/components/Contact";
+import AppBar from "@/components/AppBar";
+import Hero from "@/components/Hero";
+import { ProjectSectionHomeLayout } from "@/components/Project/Projects";
+import Resume from "@/components/Resume";
+import { ExperienceSectionHomeLayout } from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { ContactId } from "@/app/config/sectionId";
+import { ContactId } from "@/config/sectionId";
 
 export default function Contact() {
   return (

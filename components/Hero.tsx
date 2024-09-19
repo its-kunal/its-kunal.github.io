@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { LegacyRef, useEffect, useRef, useState } from "react";
-import HeroImage from "@/app/assets/hero.png";
-import { HeroId } from "@/app/config/sectionId";
-import Data from "@/app/assets/data/data.json";
+import HeroImage from "@/assets/hero.png";
+import { HeroId } from "@/config/sectionId";
+import Data from "@/assets/data/data.json";
 
 function CodeWindow() {
   return (

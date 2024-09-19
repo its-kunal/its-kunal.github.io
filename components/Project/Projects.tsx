@@ -1,5 +1,5 @@
-import { ProjectsId } from "@/app/config/sectionId";
-import Data from "@/app/assets/data/data.json";
+import { ProjectsId } from "@/config/sectionId";
+import Data from "@/assets/data/data.json";
 import ProjectCard from "./Card";
 
 export default function ProjectsSection() {

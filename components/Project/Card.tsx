@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useAssetRetriever } from "../AssetRetriever";
-import NoImageAsset from "@/app/assets/noImage.jpg"
+import NoImageAsset from "@/assets/noImage.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";

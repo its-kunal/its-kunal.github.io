@@ -1,4 +1,4 @@
-import { ResumeId } from "@/app/config/sectionId";
+import { ResumeId } from "@/config/sectionId";
 import {
   faLocationDot,
   faPhone,
@@ -12,20 +12,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import D3SVG from "@/app/assets/icons/d3js.svg";
-import FirebaseSVG from "@/app/assets/icons/firebase.svg";
-import CloudRunSVG from "@/app/assets/icons/google_cloud_run.svg";
-import JavaScriptSVG from "@/app/assets/icons/javascript.svg";
-import MongoDBSVG from "@/app/assets/icons/mongodb.svg";
-import NextJsSVG from "@/app/assets/icons/nextjs.svg";
-import NodeJsSVG from "@/app/assets/icons/nodejs.svg";
-import ReactJsSVG from "@/app/assets/icons/react.svg";
-import RedisSVG from "@/app/assets/icons/redis.svg";
-import SocketIoSVG from "@/app/assets/icons/socketio.svg";
-import TypeScriptSVG from "@/app/assets/icons/typescript.svg";
-import ViteJsSVG from "@/app/assets/icons/vitejsdev.svg";
+import D3SVG from "@/assets/icons/d3js.svg";
+import FirebaseSVG from "@/assets/icons/firebase.svg";
+import CloudRunSVG from "@/assets/icons/google_cloud_run.svg";
+import JavaScriptSVG from "@/assets/icons/javascript.svg";
+import MongoDBSVG from "@/assets/icons/mongodb.svg";
+import NextJsSVG from "@/assets/icons/nextjs.svg";
+import NodeJsSVG from "@/assets/icons/nodejs.svg";
+import ReactJsSVG from "@/assets/icons/react.svg";
+import RedisSVG from "@/assets/icons/redis.svg";
+import SocketIoSVG from "@/assets/icons/socketio.svg";
+import TypeScriptSVG from "@/assets/icons/typescript.svg";
+import ViteJsSVG from "@/assets/icons/vitejsdev.svg";
 import Image from "next/image";
-import Data from "@/app/assets/data/data.json";
+import Data from "@/assets/data/data.json";
 import React from "react";
 
 const EXPERIENCE = [

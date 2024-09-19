@@ -10,20 +10,20 @@ export enum ProjectKeys {
 async function AssetRetrieverUtil({ id }: { id: string }) {
   switch (id) {
     case ProjectKeys.AGROSITE: {
-      const Asset = await import("@/app/assets/thumbnails/agrosite.jpeg");
+      const Asset = await import("@/assets/thumbnails/agrosite.jpeg");
       return Asset;
     }
     case ProjectKeys.CHATTERBOX: {
-      const Asset = await import("@/app/assets/thumbnails/chatterbox.jpeg");
+      const Asset = await import("@/assets/thumbnails/chatterbox.jpeg");
       return Asset;
     }
     case ProjectKeys.OPINIONEST: {
-      const Asset = await import("@/app/assets/thumbnails/opinionest.jpeg");
+      const Asset = await import("@/assets/thumbnails/opinionest.jpeg");
       return Asset;
     }
     default:
       {
-        const Asset = await import("@/app/assets/noImage.jpg")
+        const Asset = await import("@/assets/noImage.jpg")
         return Asset;
       }
   }
