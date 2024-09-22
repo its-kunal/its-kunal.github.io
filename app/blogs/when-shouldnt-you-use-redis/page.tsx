@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ContentMDX from "./mdx-page/page.mdx";
+import ContentMDX from "./content.mdx";
 
 export default function page() {
   return (
