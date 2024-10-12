@@ -3,7 +3,8 @@ import Hero from "@/components/Hero";
 import { ProjectSectionHomeLayout } from "@/components/Project/Projects";
 import Resume from "@/components/Resume";
 import { ExperienceSectionHomeLayout } from "@/components/Experience";
-import Contact from "@/components/Contact";
+// import Contact from "@/components/Contact";
+import SkillsPage from "@/components/Skill";
 
 export default function Home() {
   return (
@@ -27,8 +28,7 @@ export default function Home() {
         <Resume />
         <ProjectSectionHomeLayout />
         <ExperienceSectionHomeLayout />
-        {/* <Contact /> */}
-        {/* <div className="h-32 md:h-0"></div> */}
+        <SkillsPage />
       </div>
     </div>
   );
