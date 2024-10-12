@@ -1,5 +1,6 @@
 import { SkillId } from "@/config/sectionId";
-import TreeMap from "./TreeMap";
+import dynamic from "next/dynamic";
+const TreeMap = dynamic(() => import("./TreeMap"), { ssr: false });
 import data from "./data";
 
 function SkillSectionLayout() {
