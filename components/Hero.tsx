@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { LegacyRef, useEffect, useRef, useState } from "react";
-import HeroImage from "@/assets/hero.png";
+import HeroImage from "@/assets/hero.webp";
 import { HeroId } from "@/config/sectionId";
 import Data from "@/assets/data/data.json";
 
