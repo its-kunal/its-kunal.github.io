@@ -84,6 +84,17 @@
       "link": "https://opinionest-web.web.app/",
       "github": "https://github.com/its-kunal/opinonest",
       "tag": ["featured"]
+    },
+    {
+      "key": "recommendation-system",
+      "name": "Recommendation System",
+      "techStack": [],
+      "description": [
+        "The recommendation system analyzes user interaction data (e.g., ratings, purchases, views) to predict user preferences and generate personalized recommendations. It leverages Spark's distributed computing capabilities to handle large datasets efficiently."
+      ],
+      "link": "https://github.com/its-kunal/recommendation-systems",
+      "github": "https://github.com/its-kunal/recommendation-systems",
+      "tag": []
     }
   ],
   "tech": [],
