@@ -5,6 +5,7 @@ import NoImageAsset from "@/assets/noImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface ProjectCardProps {
   name: string;
@@ -17,7 +18,6 @@ export default function ProjectCard({
   name,
   github,
   Projectkey,
-  link,
 }: ProjectCardProps) {
   const imageSrc = useAssetRetriever({ id: Projectkey });
   return (
@@ -37,17 +37,13 @@ export default function ProjectCard({
         </h1>
 
         <div className="flex gap-2 mt-2 justify-center">
-          <button className="whitespace-nowrap">
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-200 px-2 py-1 rounded-sm text-sm font-semibold"
-            >
-              <FontAwesomeIcon icon={faWindowRestore} className="mr-2" />
-              View Project
-            </a>
-          </button>
+          <Link
+            href={`project/${Projectkey}`}
+            className="whitespace-nowrap bg-purple-200 px-2 py-1 rounded-sm text-sm font-semibold"
+          >
+            <FontAwesomeIcon icon={faWindowRestore} className="mr-2" />
+            Know More
+          </Link>
           <button className="whitespace-nowrap">
             <a
               href={github}
